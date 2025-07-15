@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+@theme{
+
+   --color-footerBg: #E4E4E4;
+   --color-txtColor: #767676;
+}
