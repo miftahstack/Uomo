@@ -11,6 +11,7 @@ import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
+import { Link } from "react-router";
 // React Icon
 
 const Header = () => {
@@ -20,14 +21,29 @@ const Header = () => {
         <Container>
           <Flex className={`justify-around py-5 `}>
             <div className="flex justify-between items-center gap-x-10">
-              <Image src={Logo} alt={"logo.svg"} />
+                <Link to='/'>
+              <Image src={Logo} alt={"logo.svg"} 
+              />  </Link>
+
               <ul className="flex gap-x-5">
-                <li className="uppercase">Home</li>
-                <li className="uppercase">Shop</li>
-                <li className="uppercase">Collection</li>
-                <li className="uppercase">Journal</li>
-                <li className="uppercase">Lookback</li>
-                <li className="uppercase">pages</li>
+                <Link to='/'>
+                  <li className="uppercase">Home</li>
+                </Link>
+                <Link to='/'>
+                  <li className="uppercase">Shop</li>
+                </Link>
+                <Link to='/'>
+                  <li className="uppercase">Collection</li>
+                </Link>
+                <Link to='/'>
+                  <li className="uppercase">Journal</li>
+                </Link>
+                <Link to='/'>
+                  <li className="uppercase">Lookback</li>
+                </Link>
+                <Link to='/'>
+                  <li className="uppercase">pages</li>
+                </Link>
               </ul>
             </div>
 
