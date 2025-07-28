@@ -36,6 +36,16 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  var sliderSettings = {
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    pauseOnHover: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <>
@@ -67,6 +77,12 @@ const Hero = () => {
                 </div>
                 <Heading className={`text-[70px]`} txt={"SUMMER SALE STYLISH"} as={"h1"} />
                 <Heading className={`text-[70px]`} txt={"WOMENS"} as={"h3"} />
+                 <Link to='/'>
+                  <div className="relative group ml-2">
+                    <Heading className={`text-[14px] uppercase`} txt={"Discover More"} as={"h3"} />
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-[108px] duration-300 transition-all"></div>
+                  </div>
+                </Link>
               </div>
               <div className="block">
                 <div className="flex items-center gap-x-5">
@@ -75,6 +91,12 @@ const Hero = () => {
                 </div>
                 <Heading className={`text-[70px]`} txt={"SUMMER SALE STYLISH"} as={"h1"} />
                 <Heading className={`text-[70px]`} txt={"WOMENS"} as={"h3"} />
+                 <Link to='/'>
+                  <div className="relative group ml-2">
+                    <Heading className={`text-[14px] uppercase`} txt={"Discover More"} as={"h3"} />
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-[108px] duration-300 transition-all"></div>
+                  </div>
+                </Link>
               </div>
               <div className="block">
                 <div className="flex items-center gap-x-5">
@@ -83,10 +105,16 @@ const Hero = () => {
                 </div>
                 <Heading className={`text-[70px]`} txt={"SUMMER SALE STYLISH"} as={"h1"} />
                 <Heading className={`text-[70px]`} txt={"WOMENS"} as={"h3"} />
+                <Link to='/'>
+                  <div className="relative group ml-2">
+                    <Heading className={`text-[14px] uppercase`} txt={"Discover More"} as={"h3"} />
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-[108px] duration-300 transition-all"></div>
+                  </div>
+                </Link>
               </div>
 
             </Slider>
-            <Slider className="absolute -top-54 -right-200 " {...settings}>
+            <Slider className="absolute -top-60 -right-200 " {...sliderSettings}>
               <Image className={`absolute w-70 ml-10`} src={bannerImgOne} alt={"photo"} />
               <Image className={`w-70 `} src={bannerImgTwo} alt={"photo"} />
             </Slider>
