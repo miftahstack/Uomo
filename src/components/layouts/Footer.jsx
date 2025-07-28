@@ -2,6 +2,8 @@
 import Image from "../Image";
 import Logo from "../../assets/logo.svg";
 import Flex from "../Flex";
+import Container from "../Container";
+import { Link } from "react-router";
 // Own Components
 
 // React Icon
@@ -10,7 +12,6 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
-import Container from "../Container";
 // React Icon
 
 const Footer = () => {
@@ -44,37 +45,127 @@ const Footer = () => {
             {/* COMPANY */}
             <div>
               <h3 className="text-lg font-semibold mb-4">COMPANY</h3>
-              <ul className="space-y-2 text-sm">
-                <li>About Us</li>
-                <li>Careers</li>
-                <li>Affiliates</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
+              <ul className="flex flex-col space-y-2 text-sm">
+                 <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >About Us</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                 <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Careers</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                 <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Affiliates</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                 <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Blog</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                 <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Contact US </li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
               </ul>
             </div>
 
             {/* SHOP */}
             <div>
               <h3 className="text-lg font-semibold mb-4">SHOP</h3>
-              <ul className="space-y-2 text-sm">
-                <li>New Arrivals</li>
-                <li>Accessories</li>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Shop All</li>
+              <ul className="flex flex-col gap-y-2 text-sm">
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >New Arrival</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Accessories</li>
+                    <div className="absolute inline-block mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block ">
+                    <li className="inline">Men</li>
+                    <div className="absolute mt-1  bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Women</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Shop All</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+
               </ul>
             </div>
 
             {/* HELP */}
             <div>
               <h3 className="text-lg font-semibold mb-4">HELP</h3>
+              <ul className="flex flex-col gap-y-2 text-sm ">
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li >Customer Service</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li>My Account</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li>Find a Store</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li>Legal & Privacy</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li>Contact</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="relative group inline-block">
+                    <li>Gift Card</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
+                </Link>
+
+              </ul>
               <ul className="space-y-2 text-sm">
-                <li>Customer Service</li>
-                <li>My Account</li>
-                <li>Find a Store</li>
-                <li>Legal & Privacy</li>
-                <li>Contact</li>
-                <li>Gift Card</li>
+
+
+
+
+
+
               </ul>
             </div>
 
@@ -91,7 +182,7 @@ const Footer = () => {
                 <button className="bg-white text-black px-4 py-2 cursor-pointer rounded hover:bg-gray-200 transition">
                   JOIN
                 </button>
-                
+
               </form>
             </div>
           </Flex>

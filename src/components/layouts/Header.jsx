@@ -65,6 +65,7 @@ const Header = () => {
               </ul>
             </div>
 
+
             <div className="flex gap-x-5 text-2xl">
               <CiSearch />
               <CiUser />
