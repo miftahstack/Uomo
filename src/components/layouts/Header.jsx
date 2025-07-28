@@ -21,28 +21,46 @@ const Header = () => {
         <Container>
           <Flex className={`justify-around py-5 `}>
             <div className="flex justify-between items-center gap-x-10">
-                <Link to='/'>
-              <Image src={Logo} alt={"logo.svg"} 
-              />  </Link>
+              <Link to='/'>
+                <Image src={Logo} alt={"logo.svg"}
+                />  </Link>
 
               <ul className="flex gap-x-5">
                 <Link to='/'>
-                  <li className="uppercase">Home</li>
+                  <div className="relative group ml-2">
+                    <li className="uppercase">Home</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
                 </Link>
                 <Link to='/'>
-                  <li className="uppercase">Shop</li>
+                  <div className="relative group ml-2">
+                    <li className="uppercase">Shop</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
                 </Link>
                 <Link to='/'>
-                  <li className="uppercase">Collection</li>
+                  <div className="relative group ml-2">
+                    <li className="uppercase">Collection</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
                 </Link>
                 <Link to='/'>
-                  <li className="uppercase">Journal</li>
+                  <div className="relative group ml-2">
+                    <li className="uppercase">Journal</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
                 </Link>
                 <Link to='/'>
-                  <li className="uppercase">Lookback</li>
+                  <div className="relative group ml-2">
+                    <li className="uppercase">Lookback</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
                 </Link>
                 <Link to='/'>
-                  <li className="uppercase">pages</li>
+                  <div className="relative group ml-2">
+                    <li className="uppercase">pages</li>
+                    <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-full duration-300 transition-all"></div>
+                  </div>
                 </Link>
               </ul>
             </div>
