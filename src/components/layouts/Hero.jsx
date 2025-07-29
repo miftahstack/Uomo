@@ -51,7 +51,7 @@ const Hero = () => {
     <>
 
       <Container>
-        <div className="bg-[url(src/assets/bg.png)] h-[500px]  bg-no-repeat  bg-cover bg-center">
+        <div className="bg-[url(../src/assets/bg.png)] h-[500px]  bg-no-repeat  bg-cover bg-center">
           <div className="relative">
             <div className="absolute flex items-center top-20 -left-15 flex-col gap-y-10 text-txtColor">
               <Link to='/'>
@@ -77,7 +77,7 @@ const Hero = () => {
                 </div>
                 <Heading className={`text-[70px]`} txt={"SUMMER SALE STYLISH"} as={"h1"} />
                 <Heading className={`text-[70px]`} txt={"WOMENS"} as={"h3"} />
-                 <Link to='/'>
+                <Link to='/'>
                   <div className="relative group ml-2">
                     <Heading className={`text-[14px] uppercase`} txt={"Discover More"} as={"h3"} />
                     <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-[108px] duration-300 transition-all"></div>
@@ -91,7 +91,7 @@ const Hero = () => {
                 </div>
                 <Heading className={`text-[70px]`} txt={"SUMMER SALE STYLISH"} as={"h1"} />
                 <Heading className={`text-[70px]`} txt={"WOMENS"} as={"h3"} />
-                 <Link to='/'>
+                <Link to='/'>
                   <div className="relative group ml-2">
                     <Heading className={`text-[14px] uppercase`} txt={"Discover More"} as={"h3"} />
                     <div className="absolute mt-1 bg-black h-[2px] bottom-0 w-0 group-hover:w-[108px] duration-300 transition-all"></div>
